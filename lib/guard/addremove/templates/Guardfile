@@ -1,0 +1,6 @@
+# Add files and commands to this file, like the example:
+#   watch(%r{file/path}) { `command(s)` }
+#
+guard 'addremove' do
+  watch(/(.*)/) {|m| `echo "File as been added or removed: #{m[0]}"` }
+end
